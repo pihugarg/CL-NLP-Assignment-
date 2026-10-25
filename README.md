@@ -178,7 +178,6 @@ CL-NLP-Assignment/
 │
 ├── README.md
 ├── CL & NLP Assignment
-│    
 │
 └── Supporting Files/
 ```
