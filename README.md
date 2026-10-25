@@ -85,15 +85,15 @@ Min-Max normalization rescales numerical data into a defined range, commonly bet
 
 `X_scaled = (X - X_min) / (X_max - X_min)`
 
-Where:
+**Where:**
 
-X represents the original data value.
+    X – Original data value
 
-X_min represents the minimum value in the dataset.
+    X_min – Minimum value in the dataset
 
-X_max represents the maximum value in the dataset.
+    X_max – Maximum value in the dataset
 
-X_scaled represents the normalized value.
+    X_scaled – Normalized data value
 
 The assignment examines the application of this transformation and its importance in preparing numerical features for machine learning models.
 
