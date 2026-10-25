@@ -83,9 +83,17 @@ Min-Max normalization rescales numerical data into a defined range, commonly bet
 
 **Formula:**
 
-\[
-X'=\frac{X-X_{\min}}{X_{\max}-X_{\min}}
-\]
+X_scaled = (X - X_min) / (X_max - X_min)
+
+Where:
+
+X represents the original data value.
+
+X_min represents the minimum value in the dataset.
+
+X_max represents the maximum value in the dataset.
+
+X_scaled represents the normalized value.
 
 The assignment examines the application of this transformation and its importance in preparing numerical features for machine learning models.
 
@@ -97,48 +105,52 @@ A predefined decision threshold is applied to convert the probability into a bin
 
 ## 📊 Model Evaluation
 
-The assignment covers the confusion matrix and the calculation of classification metrics used to assess model performance.
+The assignment explores the use of a confusion matrix to evaluate classification performance and understand how accurately a model identifies different classes.
 
-The four components of a confusion matrix are:
+The confusion matrix consists of the following components:
 
-- **TP – True Positive:** A failure correctly identified as a failure.
-- **TN – True Negative:** A normal case correctly identified as normal.
-- **FP – False Positive:** A normal case incorrectly classified as a failure.
-- **FN – False Negative:** A failure incorrectly classified as normal.
+- **TP – True Positive:** Actual positive cases correctly predicted as positive.
+- **TN – True Negative:** Actual negative cases correctly predicted as negative.
+- **FP – False Positive:** Actual negative cases incorrectly predicted as positive.
+- **FN – False Negative:** Actual positive cases incorrectly predicted as negative.
 
-The following evaluation metrics are considered:
+Using these values, the following evaluation metrics are calculated:
 
 ### Precision
 
-\[
-\text{Precision}=\frac{TP}{TP+FP}
-\]
+**Formula:**
 
-Measures how many predicted positive cases are actually positive.
+`Precision = TP / (TP + FP)`
+
+Measures the proportion of predicted positive cases that are actually positive.
 
 ### Recall
 
-\[
-\text{Recall}=\frac{TP}{TP+FN}
-\]
+**Formula:**
 
-Measures how many actual positive cases are correctly detected.
+`Recall = TP / (TP + FN)`
+
+Measures the proportion of actual positive cases correctly identified by the model.
 
 ### F1-Score
 
-\[
-F1=2\times\frac{\text{Precision}\times\text{Recall}}{\text{Precision}+\text{Recall}}
-\]
+**Formula:**
 
-Provides a combined measure of precision and recall.
+`F1-Score = 2 × (Precision × Recall) / (Precision + Recall)`
+
+Combines precision and recall using their harmonic mean to provide a balanced measure of classification performance.
 
 ### Accuracy
 
-\[
-\text{Accuracy}=\frac{TP+TN}{TP+TN+FP+FN}
-\]
+**Formula:**
 
-Represents the proportion of total predictions that are correct.
+`Accuracy = (TP + TN) / (TP + TN + FP + FN)`
+
+Measures the proportion of all predictions that are correctly classified.
+
+The assignment also examines why accuracy alone may not be sufficient when working with imbalanced datasets. In failure prediction, for example, the number of normal observations may be much higher than the number of actual failures. Consequently, a model can achieve high accuracy while missing important failure cases.
+
+Therefore, precision, recall, and F1-score provide additional insights into model performance, particularly when correctly identifying failures is important.
 
 The assignment also explains why accuracy may be misleading for imbalanced datasets. In failure prediction, a model may correctly classify most normal cases while missing many actual failures, making recall and F1-score especially important.
 
