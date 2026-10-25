@@ -177,7 +177,7 @@ After completing this assignment, the following concepts can be understood:
 CL-NLP-Assignment/
 │
 ├── README.md
-├── CL & NLP Assignment
+├── Pihu_500123947_NLP_Assignment
 │
 └── Supporting Files/
 ```
