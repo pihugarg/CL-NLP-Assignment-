@@ -1,4 +1,4 @@
-# Computational Linguistics & NLP Assignment
+# Computational Linguistics & Natural Language Processing
 
 ## 📌 Overview
 
