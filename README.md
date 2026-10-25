@@ -83,7 +83,7 @@ Min-Max normalization rescales numerical data into a defined range, commonly bet
 
 **Formula:**
 
-X_scaled = (X - X_min) / (X_max - X_min)
+`X_scaled = (X - X_min) / (X_max - X_min)`
 
 Where:
 
